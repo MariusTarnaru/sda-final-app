@@ -1,0 +1,39 @@
+<p>add-post works!</p>
+<p>Please add new post !</p>
+
+<form #f="ngForm" (ngSubmit)="onSubmitTemplateBased(f)">
+  <p>
+    <label class= "Id">Id:</label>
+    <input type="text"
+           name="id"
+           [(ngModel)]="post.id"  required>
+  </p>
+  <p>
+    <label>User Id:</label>
+    <input type="text"
+           name="userId"
+           [(ngModel)]="post.userId" required>
+  </p>
+  <p>
+    <label>Title:</label>
+    <input type="text"
+           name="title"
+           [(ngModel)]="post.title" required>
+  </p>
+  <p>
+    <label style="font-style: italic">Post body:</label>
+    <input type="text"
+           name="body"
+           [(ngModel)]="post.body" required>
+  </p>
+  <p>
+    <button type="submit" [disabled]="!f.valid">Submit</button>
+  </p>
+</form>
+
+<div id = move>
+  Test moving rectangle !
+  <script>
+
+  </script>
+</div>

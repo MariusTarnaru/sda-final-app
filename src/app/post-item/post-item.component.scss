@@ -1,0 +1,16 @@
+/* se poate folosi doar in scss*/
+.post-title{
+  font-size: 10px;
+  font-style: italic;
+  &:hover{
+    font-size: 16px;
+    color: red;
+    cursor:pointer;
+    transition: 1500ms all;
+
+  }
+}
+/*se poate folosi in ambele css si scss*/
+/*.post-title:hover{
+  color: red;
+}*/
